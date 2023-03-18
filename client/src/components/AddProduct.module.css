@@ -1,0 +1,151 @@
+
+.form-cont input ,
+.form-cont textarea,
+.form-cont select{
+  outline: none;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  transition: all 0.35s ease-in-out;
+  border-radius: 3px ;
+  min-height: 25px;
+}
+.form-cont input:focus ,
+.form-cont textarea:focus,
+.form-cont select:focus{
+      border-color: #bd8200;
+}
+.form-cont select{
+  color: white;
+  background-color: #f0a500;
+  width: 50%;
+  align-self: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ecebeb;
+}
+
+.form-cont {
+  width: 80%;
+  height: 80%;
+  border-radius: 6px;
+  overflow-y: auto;
+  padding-bottom: 24px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  padding: 6px 0px;
+}
+
+.base-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.base-item-cont {
+  display: flex;
+  flex-direction: column;
+  color: #f0a500;
+}
+
+.add-color {
+  margin: 12px;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  width: 400px;
+  align-self: center;
+  background-color: #f0a500;
+  color: white;
+  text-decoration: none;
+}
+
+.add-color:hover {
+  background-color: #bd8200;
+  color: white;
+}
+
+.color-cont,
+.qty-cont,
+.marketing-cont {
+  display: flex;
+  gap: 12px;
+  color: #f0a500;
+}
+
+.color-cont {
+  justify-content: space-around;
+  padding: 0 12px;
+}
+
+.qty-cont input,
+.marketing-cont input[type="number"] {
+  width: 50px;
+}
+
+.qty-item,
+.marketing-item{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.marketing-item label {
+  text-align: start;
+}
+.marketing-item input{
+  width: 80%;
+}
+.marketing-item input[type="file"]::file-selector-button{
+  background-color: #f0a500;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 25px;
+}
+
+.remove-color{
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  align-self: center;
+  color: white;
+}
+.remove-color:hover{
+  background-color: rgb(231, 69, 69);
+}
+
+.create-btn{
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    width: 200px;
+    height: 50px;
+    margin: 24px 12px 0px 0px;
+    align-self: flex-end;
+}
+.create-btn:hover{
+  background-color: rgb(37, 214, 37);
+}
+.picked-img{
+  display: flex;
+  gap: 6px;
+  padding-top: 2px;
+}
+.picked-img img{
+  width: 100px;
+}
