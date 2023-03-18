@@ -28,6 +28,7 @@ router.post('/create-new-product', async (req, res) => {
         const updatedProducts = await Promise.all(productVarieties)
         dataProduct.products = updatedProducts
         const newProduct = await productService.createProduct(dataProduct)
+        res.status(200)
         return res.json(newProduct)
 
     } catch (error) {

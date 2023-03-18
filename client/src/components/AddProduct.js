@@ -138,7 +138,7 @@ export const AddProduct = () => {
         }
     }
 
-
+console.log(productData);
     return (
         <div className={styles['container']} >
             <form className={styles['form-cont']} onSubmit={submitHandler}>
